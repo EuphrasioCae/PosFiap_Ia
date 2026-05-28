@@ -1,0 +1,30 @@
+[project]
+name = "tech-challenge-fase-1"
+version = "0.1.0"
+description = "Tech Challenge Fase 1 - FIAP Post Tech IA para Devs"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+"jupyterlab>=4.0",
+    "jupyterlab-lsp>=5.3.0",
+    "matplotlib>=3.8",
+    "nbstripout>=0.9.1",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "plotly>=6.6.0",
+    "pysus>=1.0.1",
+    "python-lsp-server>=1.14.0",
+    "scikit-learn>=1.4",
+    "seaborn>=0.13",
+    "shap>=0.44",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["pipeline"]
+
+[tool.setuptools.package-dir]
+"" = "src"

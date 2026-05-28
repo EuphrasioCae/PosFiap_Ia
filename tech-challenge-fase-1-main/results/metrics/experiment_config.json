@@ -1,0 +1,33 @@
+{
+  "random_state": 42,
+  "cv_splits": 3,
+  "min_recall_threshold": 0.8,
+  "validation_size_for_threshold": 0.2,
+  "bootstrap_rounds": 300,
+  "tested_models": [
+    "LogReg",
+    "RandomForest",
+    "HistGB"
+  ],
+  "tested_scenarios": [
+    "A",
+    "B",
+    "C"
+  ],
+  "winning_scenario": "B",
+  "train_shape": [
+    552344,
+    29
+  ],
+  "test_shape": [
+    138087,
+    29
+  ],
+  "feature_count": 29,
+  "artifacts": {
+    "comparison_csv": "../results/metrics/model_comparison_cv_test.csv",
+    "threshold_curve_csv": "../results/metrics/threshold_search_curve.csv",
+    "operational_metrics_json": "../results/metrics/best_model_operational_metrics.json",
+    "model_pickle": "../results/artifacts/best_model_calibrated.pkl"
+  }
+}

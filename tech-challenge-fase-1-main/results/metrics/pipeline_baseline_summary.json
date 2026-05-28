@@ -1,0 +1,17 @@
+{
+  "random_state": 42,
+  "cv_splits": 3,
+  "min_recall_threshold": 0.8,
+  "n_models_compared": 4,
+  "best_cv_model": "HistGB_Balanced",
+  "best_cv_recall_mean": 0.49584096091454016,
+  "best_cv_f2_mean": 0.5242850362965165,
+  "selection_rule": "fallback: max CV F2 (nenhum modelo atingiu recall m\u00ednimo)",
+  "imbalance_strategy": "sample_weight=balanced",
+  "operational_model": "HistGB_Balanced",
+  "operational_threshold": 0.37999999999999995,
+  "operational_recall": 0.835174717368962,
+  "operational_f2": 0.4094344375865978,
+  "operational_average_precision": 0.29382468453790905,
+  "operational_brier": 0.21351654676395723
+}

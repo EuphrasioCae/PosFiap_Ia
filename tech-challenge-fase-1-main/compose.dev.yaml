@@ -1,0 +1,19 @@
+# Local dev: Jupyter with fixed token (${JUPYTER_TOKEN} from .env, or default local-dev-token).
+# Run: docker compose -f compose.dev.yaml up --build
+# Production: use compose.yaml only (random token; see logs).
+
+include:
+  - path: compose.yaml
+
+services:
+  jupyter:
+    command:
+      - uv
+      - run
+      - jupyter
+      - lab
+      - --ip=0.0.0.0
+      - --port=8888
+      - --no-browser
+      - --allow-root
+      - --ServerApp.token=${JUPYTER_TOKEN:-local-dev-token}
