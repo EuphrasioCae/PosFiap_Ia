@@ -1,0 +1,208 @@
+{
+  "timestamp": "2026-05-27T22:20:44.759861",
+  "generation": 136,
+  "fitness": 16.62645035498334,
+  "total_distance_km": 5239.033060172774,
+  "route": [
+    {
+      "name": "Marcia Pereira",
+      "city": "Itajubá",
+      "lat": -22.4167,
+      "lon": -45.45,
+      "priority": 15,
+      "urgency": "ROTINA"
+    },
+    {
+      "name": "Carla Oliveira",
+      "city": "Divinópolis",
+      "lat": -20.1333,
+      "lon": -44.8833,
+      "priority": 30,
+      "urgency": "BAIXA"
+    },
+    {
+      "name": "Patricia Souza",
+      "city": "Itaúna",
+      "lat": -20.0667,
+      "lon": -44.5667,
+      "priority": 15,
+      "urgency": "ROTINA"
+    },
+    {
+      "name": "Patricia Souza",
+      "city": "Nova Lima",
+      "lat": -19.9833,
+      "lon": -43.85,
+      "priority": 45,
+      "urgency": "MEDIA"
+    },
+    {
+      "name": "Fernanda Lima",
+      "city": "Montes Claros",
+      "lat": -16.7333,
+      "lon": -43.8667,
+      "priority": 15,
+      "urgency": "ROTINA"
+    },
+    {
+      "name": "Andreia Ribeiro",
+      "city": "Araguari",
+      "lat": -18.65,
+      "lon": -48.2,
+      "priority": 15,
+      "urgency": "ROTINA"
+    },
+    {
+      "name": "Simone Carvalho",
+      "city": "Uberaba",
+      "lat": -19.7333,
+      "lon": -47.9167,
+      "priority": 65,
+      "urgency": "MEDIA"
+    },
+    {
+      "name": "Juliana Costa",
+      "city": "Poços de Caldas",
+      "lat": -21.7833,
+      "lon": -46.5667,
+      "priority": 65,
+      "urgency": "MEDIA"
+    },
+    {
+      "name": "Renata Ferreira",
+      "city": "Pouso Alegre",
+      "lat": -22.2333,
+      "lon": -45.9333,
+      "priority": 30,
+      "urgency": "BAIXA"
+    },
+    {
+      "name": "Luciana Rodrigues",
+      "city": "Três Corações",
+      "lat": -21.7,
+      "lon": -45.25,
+      "priority": 30,
+      "urgency": "BAIXA"
+    },
+    {
+      "name": "Vanessa Nunes",
+      "city": "Juiz de Fora",
+      "lat": -21.75,
+      "lon": -43.35,
+      "priority": 55,
+      "urgency": "MEDIA"
+    },
+    {
+      "name": "Renata Ferreira",
+      "city": "Ipatinga",
+      "lat": -19.4833,
+      "lon": -42.5333,
+      "priority": 30,
+      "urgency": "BAIXA"
+    },
+    {
+      "name": "Luciana Rodrigues",
+      "city": "Teófilo Otoni",
+      "lat": -17.8667,
+      "lon": -41.5,
+      "priority": 15,
+      "urgency": "ROTINA"
+    },
+    {
+      "name": "Fernanda Lima",
+      "city": "Sabará",
+      "lat": -19.8833,
+      "lon": -43.8,
+      "priority": 15,
+      "urgency": "ROTINA"
+    },
+    {
+      "name": "Marcia Pereira",
+      "city": "Belo Horizonte",
+      "lat": -19.9167,
+      "lon": -43.9333,
+      "priority": 15,
+      "urgency": "ROTINA"
+    },
+    {
+      "name": "Ana Silva",
+      "city": "Belo Horizonte",
+      "lat": -19.9167,
+      "lon": -43.9333,
+      "priority": 40,
+      "urgency": "BAIXA"
+    },
+    {
+      "name": "Maria Santos",
+      "city": "Contagem",
+      "lat": -19.9322,
+      "lon": -44.0539,
+      "priority": 30,
+      "urgency": "BAIXA"
+    },
+    {
+      "name": "Carla Oliveira",
+      "city": "Betim",
+      "lat": -19.9667,
+      "lon": -44.2,
+      "priority": 30,
+      "urgency": "BAIXA"
+    },
+    {
+      "name": "Ana Silva",
+      "city": "Ubá",
+      "lat": -21.1167,
+      "lon": -42.9333,
+      "priority": 15,
+      "urgency": "ROTINA"
+    },
+    {
+      "name": "Camila Dias",
+      "city": "Ituiutaba",
+      "lat": -18.9667,
+      "lon": -49.4667,
+      "priority": 40,
+      "urgency": "BAIXA"
+    },
+    {
+      "name": "Tatiana Gomes",
+      "city": "Uberlândia",
+      "lat": -18.9167,
+      "lon": -48.2833,
+      "priority": 60,
+      "urgency": "ALTA"
+    },
+    {
+      "name": "Beatriz Almeida",
+      "city": "Diamantina",
+      "lat": -18.25,
+      "lon": -43.6,
+      "priority": 50,
+      "urgency": "MEDIA"
+    },
+    {
+      "name": "Juliana Costa",
+      "city": "Governador Valadares",
+      "lat": -18.85,
+      "lon": -41.95,
+      "priority": 80,
+      "urgency": "ALTA"
+    },
+    {
+      "name": "Maria Santos",
+      "city": "Cataguases",
+      "lat": -21.3833,
+      "lon": -42.6833,
+      "priority": 60,
+      "urgency": "ALTA"
+    },
+    {
+      "name": "Beatriz Almeida",
+      "city": "Varginha",
+      "lat": -21.55,
+      "lon": -45.4333,
+      "priority": 80,
+      "urgency": "ALTA"
+    }
+  ]
+}
