@@ -42,7 +42,7 @@ def draw_plot(x, y, x_label = 'Generation', y_label = 'Fitness'):
     canvas = agg.FigureCanvasAgg(fig)
     canvas.draw()
     renderer = canvas.get_renderer()
-    raw_data = renderer.tostring_rgb()
+    raw_data = canvas.buffer_rgba()
 
 
 
@@ -50,7 +50,7 @@ def draw_plot(x, y, x_label = 'Generation', y_label = 'Fitness'):
     # screen = pygame.display.get_surface()
 
     size = canvas.get_width_height()
-    surf = pygame.image.fromstring(raw_data, size, "RGB")
+    surf = pygame.image.frombuffer(raw_data, size, "RGBA")
     screen.blit(surf, (0,0))
     
     
