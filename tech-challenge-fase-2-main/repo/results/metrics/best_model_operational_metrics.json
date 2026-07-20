@@ -1,0 +1,70 @@
+{
+  "model": "HistGB",
+  "selection_rule": "max CV Average Precision com melhor interpretabilidade  (critério threshold-independente com cenário B)",
+  "threshold": 0.3999999999999999,
+  "scenario": "B",
+  "imbalance_strategy": "sample_weight=balanced",
+  "metrics": {
+    "threshold": 0.3999999999999999,
+    "recall": 0.813502768706517,
+    "f2": 0.38225718212508175,
+    "f1": 0.212937153900472,
+    "precision": 0.1225011224904321,
+    "accuracy": 0.38654616292627114,
+    "roc_auc": 0.6534864475880303,
+    "average_precision": 0.2060113134043402,
+    "brier": 0.2264757521484366,
+    "tp": 11459,
+    "tn": 41918,
+    "fp": 82083,
+    "fn": 2627
+  },
+  "metrics_default_threshold": {
+    "threshold": 0.5,
+    "recall": 0.5067442851057787,
+    "f2": 0.3614799509789027,
+    "f1": 0.25278441788401945,
+    "precision": 0.1683927434004105,
+    "accuracy": 0.6944028040293438,
+    "roc_auc": 0.6534864475880303,
+    "average_precision": 0.2060113134043402,
+    "brier": 0.2264757521484366,
+    "tp": 7138,
+    "tn": 88750,
+    "fp": 35251,
+    "fn": 6948
+  },
+  "bootstrap_ci_95": {
+    "roc_auc": {
+      "low": 0.6485964571711265,
+      "high": 0.6585227493061319
+    },
+    "average_precision": {
+      "low": 0.20000292462368613,
+      "high": 0.21230825782978013
+    },
+    "precision": {
+      "low": 0.1199497895368009,
+      "high": 0.12442715115437733
+    },
+    "recall": {
+      "low": 0.8066443041826367,
+      "high": 0.8202600354791322
+    },
+    "f2": {
+      "low": 0.3765628902650627,
+      "high": 0.3866848759925737
+    },
+    "brier": {
+      "low": 0.2258824185275359,
+      "high": 0.22714470658414854
+    }
+  },
+  "best_params": {
+    "min_samples_leaf": 100,
+    "max_leaf_nodes": 31,
+    "max_iter": 350,
+    "learning_rate": 0.05,
+    "l2_regularization": 1.0
+  }
+}

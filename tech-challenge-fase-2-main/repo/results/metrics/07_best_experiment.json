@@ -1,0 +1,17 @@
+{
+  "best_notebook": "03_AG_expanded_search",
+  "best_experiment": "Exp2_padrao",
+  "best_model_type": "histgb",
+  "best_metrics": {
+    "recall": 0.8302,
+    "f2": 0.38,
+    "precision": 0.1199,
+    "roc_auc": 0.6521,
+    "fn": 2392,
+    "fp": 85824
+  },
+  "baseline_metrics": {
+    "fn": 2627,
+    "fp": 82083
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "acceptance_criteria": {
+    "recall_minimum": 0.8,
+    "must_improve_over_default_threshold": [
+      "recall",
+      "f2"
+    ],
+    "calibration_monitor": "brier"
+  },
+  "retraining_checklist": [
+    "Reexecutar 02_preprocessing.ipynb para regenerar X_train/X_test e y_train/y_test",
+    "Manter RANDOM_STATE e CV_SPLITS para comparação justa",
+    "Selecionar threshold apenas na validação dedicada",
+    "Conferir ganho operacional sobre threshold padrão antes de publicar resultado",
+    "Versionar métricas, configuração e modelo calibrado gerados neste notebook"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "notebook": "05_AG_random_forest",
+  "experiment": "Exp4_hotstart",
+  "model_type": "rf",
+  "best_params": {
+    "n_estimators": 100,
+    "max_depth": 8,
+    "min_samples_leaf": 4,
+    "max_features": "log2",
+    "min_samples_split": 10,
+    "class_weight": "balanced"
+  },
+  "cv_fitness": -0.5242253221169204
+}

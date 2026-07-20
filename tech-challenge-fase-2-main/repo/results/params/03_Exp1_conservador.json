@@ -1,0 +1,15 @@
+{
+  "notebook": "03_AG_expanded_search",
+  "experiment": "Exp1_conservador",
+  "model_type": "histgb",
+  "best_params": {
+    "max_iter": 100,
+    "learning_rate": 0.2,
+    "max_leaf_nodes": 95,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "max_depth": null,
+    "max_bins": 63
+  },
+  "cv_fitness": -0.9906470734391084
+}

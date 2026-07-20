@@ -1,0 +1,16 @@
+{
+  "notebook": "04_AG_smote",
+  "experiment": "Exp2_SMOTE_k5_hotstart",
+  "model_type": "smote_histgb",
+  "smote_key": "SMOTE_k5",
+  "best_params": {
+    "max_iter": 500,
+    "learning_rate": 0.2,
+    "max_leaf_nodes": 95,
+    "min_samples_leaf": 150,
+    "l2_regularization": 0.5,
+    "max_depth": null,
+    "max_bins": 63
+  },
+  "cv_fitness": -0.9459588968161006
+}

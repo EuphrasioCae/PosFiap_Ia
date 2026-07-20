@@ -1,0 +1,160 @@
+Metadata-Version: 2.4
+Name: tech-challenge-fase-2
+Version: 0.1.0
+Summary: Tech Challenge Fase 2 - FIAP Post Tech IA para Devs (AG + LLM)
+Requires-Python: <3.13,>=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: imbalanced-learn>=0.14.2
+Requires-Dist: jupyterlab>=4.0
+Requires-Dist: jupyterlab-lsp>=5.3.0
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: nbstripout>=0.9.1
+Requires-Dist: numpy>=1.26
+Requires-Dist: pandas>=2.0
+Requires-Dist: plotly>=6.6.0
+Requires-Dist: python-lsp-server>=1.14.0
+Requires-Dist: scikit-learn>=1.4
+Requires-Dist: seaborn>=0.13
+Requires-Dist: shap>=0.44
+
+# Tech Challenge Fase 2
+
+FIAP Pós Tech IA para Devs. Continuação do projeto do hospital universitário iniciado na Fase 1.
+
+## Desafio
+
+Após o sucesso inicial no desenvolvimento de modelos de machine learning para diagnóstico médico no Módulo 1, o hospital universitário agora enfrenta novos desafios que podem ser solucionados com técnicas de algoritmos genéticos e processamento de linguagem natural.
+
+## Projeto escolhido: Otimização de Modelos de Diagnóstico
+
+O hospital precisa melhorar a precisão e eficiência dos modelos de diagnóstico desenvolvidos no Módulo 1. O desafio é utilizar algoritmos genéticos para otimizar os hiperparâmetros desses modelos, além de incorporar capacidades iniciais de processamento de linguagem natural através de LLMs para melhorar a interpretabilidade dos resultados para os profissionais de saúde.
+
+Esta fase é fundamental para preparar a infraestrutura necessária para o assistente médico mais avançado previsto no Módulo 3.
+
+## Objetivo
+
+Desenvolver uma solução para otimização do modelo de ML médico existente (HistGradientBoostingClassifier da Fase 1), além de implementar recursos iniciais de processamento de linguagem natural para melhorar a interpretação e apresentação dos diagnósticos.
+
+## Requisitos obrigatórios
+
+### 1. Otimização via Algoritmos Genéticos
+
+* Implementar um algoritmo genético para otimização de hiperparâmetros do modelo de diagnóstico desenvolvido no Módulo 1:
+  * Definir uma codificação adequada (representação de genes) para os hiperparâmetros relevantes.
+  * Implementar operadores de seleção, cruzamento e mutação.
+  * Definir uma função fitness baseada nas métricas de desempenho do modelo (accuracy, recall, F1-score, etc.).
+* Comparar o desempenho do modelo otimizado com o modelo original da Fase 1.
+* Realizar ao menos 3 experimentos com diferentes configurações do algoritmo genético (tamanho da população, taxas de mutação, etc.).
+
+### 2. Escalabilidade automática
+
+* Configurar recursos de escalabilidade automática para lidar com variações de demanda.
+* Implementar monitoramento e logging adequados para tracking de desempenho.
+* Documentar arquitetura e decisões de implementação.
+
+Observação: a implementação em nuvem é opcional e pode ser considerada para pontuação extra.
+
+### 3. Integração com LLMs para interpretação de resultados
+
+* Integrar uma LLM pré-treinada (GPT, Falcon, LLaMA, etc.) para:
+  * Gerar explicações em linguagem natural dos diagnósticos produzidos pelo modelo.
+  * Transformar dados numéricos e estatísticos em insights acionáveis para médicos.
+  * Preparar a base para a futura integração com dados textuais no Módulo 3.
+* Implementar técnicas de prompt engineering para obter respostas relevantes e adequadas ao contexto médico.
+* Avaliar a qualidade das interpretações geradas.
+
+### 4. Código e organização
+
+* Projeto Python bem estruturado, utilizando ambiente virtual (este repositório usa `uv`).
+* Documentação detalhada, incluindo diagramas de arquitetura.
+* Testes automatizados para validação de funcionalidades.
+* Se optado pela implementação em nuvem: Infraestrutura como código (IaC) para provisionamento dos recursos.
+
+## Etapas e responsáveis
+
+| Etapa | Responsável | Janela |
+|---|---|---|
+| 1. AG para otimização de hiperparâmetros | Isa | 08/06 a 14/06 |
+| 1.5. Contrato de dados modelo para LLM e spec de logging | Emídio e Caê | 15/06 a 21/06 |
+| 2. Escalabilidade, monitoramento e logging | Alan | 15/06 a 24/06 |
+| 3. Integração com LLM para interpretação | Igor | 22/06 a 30/06 |
+| 4. Integração end to end e testes automatizados | Todos | 01/07 a 06/07 |
+| 5. Relatório técnico e vídeo | Emídio e Caê | 07/07 a 13/07 |
+
+Entrega final: 14/07.
+
+## Entregáveis
+
+* **Repositório Git** com código-fonte completo, documentação da API (se aplicável), scripts e notebooks de demonstração, e arquivos de configuração para implantação (se em nuvem).
+* **Relatório técnico** cobrindo: implementação do AG e resultados da otimização de hiperparâmetros, integração com LLM (abordagem, prompts utilizados, avaliação de qualidade), comparativo de desempenho entre modelo original e otimizado, desafios enfrentados e arquitetura da solução.
+* **Vídeo de demonstração** de até 15 minutos no YouTube ou Vimeo (público ou não listado), com demonstração do sistema em execução, explicação dos componentes, apresentação dos resultados do AG e demonstração da integração com LLM.
+
+## Estrutura do repositório
+
+```
+.
+├── data/                          splits prontos (X/y train/test) gerados na Fase 1
+├── notebooks/
+│   ├── 01_AG.ipynb                    AG principal (recall e F2)
+│   ├── 02_AG_threshold040.ipynb       AG com threshold operacional 0.40
+│   ├── 03_AG_expanded_search.ipynb    AG com espaço expandido (8 genes)
+│   ├── 04_AG_smote.ipynb              AG com SMOTE para balanceamento
+│   ├── 05_AG_random_forest.ipynb      AG sobre RandomForest (alternativa ao HGB)
+│   └── 06_co_evolution.ipynb          Co-evolução de hiperparâmetros e threshold
+├── results/
+│   ├── AG_resultados_resumo.md        síntese consolidada dos experimentos
+│   ├── artifacts/                     modelo baseline calibrado e saídas do AG
+│   ├── figures/                       gráficos de convergência dos experimentos
+│   └── metrics/                       métricas baseline e dos experimentos AG
+├── src/
+│   └── utils/
+│       └── experiment_utils.py    helpers de modelagem sklearn (apply_scenario, etc.)
+└── pyproject.toml
+```
+
+## Setup
+
+```bash
+uv sync
+uv run jupyter lab
+```
+
+### Configuração do nbstripout (obrigatório)
+
+O projeto usa [nbstripout](https://github.com/kynan/nbstripout) para evitar que outputs e metadados dos notebooks sejam commitados. **Todos os membros do time precisam rodar este comando uma vez após clonar o repositório:**
+
+```bash
+uv run nbstripout --install --attributes .gitattributes
+```
+
+Isso registra o filtro do Git localmente. O arquivo `.gitattributes` já está no repositório com as regras:
+
+```gitattributes
+*.ipynb filter=nbstripout
+*.zpln filter=nbstripout
+*.ipynb diff=ipynb
+```
+
+Verifique se está ativo com `uv run nbstripout --status`.
+
+## Insumos importados da Fase 1
+
+* `data/X_train.parquet`, `data/X_test.parquet`, `data/y_train.parquet`, `data/y_test.parquet`: splits estratificados já preparados.
+* `results/artifacts/best_model_calibrated.pkl`: melhor modelo da Fase 1, calibrado, usado como baseline de comparação para o AG.
+* `results/metrics/best_model_operational_metrics.json`: hiperparâmetros do baseline (ponto de partida do AG) e métricas operacionais.
+* `results/metrics/*.csv` e `experiment_config.json`: métricas detalhadas e configuração do experimento Fase 1, usadas no comparativo.
+
+Cenário fixado: B (29 features ordinais e contínuas), `sample_weight=balanced`, threshold operacional 0.40 com piso clínico de recall maior ou igual a 0.80.
+
+## Experimentos AG conduzidos (Etapa 1, Isa)
+
+Os 6 notebooks varrem configurações diferentes do AG sobre o problema de prematuridade. A síntese e os trade-offs estão em `results/AG_resultados_resumo.md`. Métricas detalhadas em `results/metrics/01_ag_comparison*.csv`, `02_ag_comparison_*.csv`, `03_comparison_*.csv`, `04_comparison_*.csv`, `05_comparison_*.csv` e `06_ag_coevo_comparison.csv`. Curvas de convergência em `results/figures/`.
+
+| Notebook | Experimento | Foco |
+|---|---|---|
+| 01 | AG base | 6 genes, recall e F2 com piso clínico |
+| 02 | Threshold 0.40 | mesmo AG fixando o threshold operacional |
+| 03 | Expanded search | espaço de busca com 8 genes |
+| 04 | SMOTE | balanceamento sintético da classe positiva |
+| 05 | Random Forest | troca o estimador (HGB para RF) |
+| 06 | Co-evolução | evolui hiperparâmetros e threshold em conjunto |

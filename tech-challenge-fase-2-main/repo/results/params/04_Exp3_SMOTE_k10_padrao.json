@@ -1,0 +1,16 @@
+{
+  "notebook": "04_AG_smote",
+  "experiment": "Exp3_SMOTE_k10_padrao",
+  "model_type": "smote_histgb",
+  "smote_key": "SMOTE_k10",
+  "best_params": {
+    "max_iter": 400,
+    "learning_rate": 0.15,
+    "max_leaf_nodes": 95,
+    "min_samples_leaf": 100,
+    "l2_regularization": 1.0,
+    "max_depth": 15,
+    "max_bins": 63
+  },
+  "cv_fitness": -0.9583998864160721
+}

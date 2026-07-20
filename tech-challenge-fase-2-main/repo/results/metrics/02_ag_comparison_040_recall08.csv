@@ -1,0 +1,6 @@
+origem,params,cv_fitness,recall,f2,precision,roc_auc,average_precision,brier
+Baseline (RandomizedSearch Fase 1),"{'min_samples_leaf': 100, 'max_leaf_nodes': 31, 'max_iter': 350, 'learning_rate': 0.05, 'l2_regularization': 1.0}",-0.5041,0.8097401675422405,0.3817933509178304,0.12260561109319575,0.6541634146316301,0.20652071801786287,0.22369132676457745
+Exp1_conservador,"{'max_iter': 300, 'learning_rate': 0.03, 'max_leaf_nodes': 15, 'min_samples_leaf': 35, 'l2_regularization': 2.0}",-0.499,0.8292630981116001,0.38071181800404147,0.12034079904394948,0.6500134527364763,0.20227896332846113,0.22669923351876287
+Exp2_padrao,"{'max_iter': 100, 'learning_rate': 0.1, 'max_leaf_nodes': 15, 'min_samples_leaf': 50, 'l2_regularization': 1.0}",-0.4974,0.8274172937668607,0.3812187224021195,0.12075092466924296,0.6503809414598678,0.20281032524792508,0.22640688710523643
+Exp3_exploratorio,"{'max_iter': 300, 'learning_rate': 0.1, 'max_leaf_nodes': 15, 'min_samples_leaf': 50, 'l2_regularization': 1.0}",-0.498,0.817194377395996,0.38174799525095016,0.12190885695222563,0.6522866500885385,0.20458484168223423,0.22521393440945697
+Exp4_hotstart,"{'max_iter': 100, 'learning_rate': 0.1, 'max_leaf_nodes': 15, 'min_samples_leaf': 50, 'l2_regularization': 1.0}",-0.4974,0.8274172937668607,0.3812187224021195,0.12075092466924296,0.6503809414598678,0.20281032524792508,0.22640688710523643

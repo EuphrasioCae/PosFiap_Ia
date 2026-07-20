@@ -1,0 +1,17 @@
+{
+  "notebook": "06_co_evolution",
+  "experiment": "Cenario_B",
+  "model_type": "histgb",
+  "scenario": "B",
+  "best_threshold": 0.5,
+  "best_params": {
+    "max_iter": 150,
+    "learning_rate": 0.15,
+    "max_leaf_nodes": 95,
+    "min_samples_leaf": 35,
+    "l2_regularization": 2.0,
+    "max_depth": 10,
+    "max_bins": 127
+  },
+  "cv_fitness": -1.2404
+}

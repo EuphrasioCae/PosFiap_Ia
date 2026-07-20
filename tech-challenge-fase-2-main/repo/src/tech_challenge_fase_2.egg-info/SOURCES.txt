@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/tech_challenge_fase_2.egg-info/PKG-INFO
+src/tech_challenge_fase_2.egg-info/SOURCES.txt
+src/tech_challenge_fase_2.egg-info/dependency_links.txt
+src/tech_challenge_fase_2.egg-info/requires.txt
+src/tech_challenge_fase_2.egg-info/top_level.txt

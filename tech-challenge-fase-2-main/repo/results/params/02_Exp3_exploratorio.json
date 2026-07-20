@@ -1,0 +1,13 @@
+{
+  "notebook": "02_AG_threshold040",
+  "experiment": "Exp3_exploratorio",
+  "model_type": "histgb",
+  "best_params": {
+    "max_iter": 300,
+    "learning_rate": 0.1,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 50,
+    "l2_regularization": 1.0
+  },
+  "cv_fitness": -0.49797678628474074
+}

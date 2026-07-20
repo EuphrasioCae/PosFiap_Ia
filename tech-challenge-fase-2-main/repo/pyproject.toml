@@ -1,0 +1,35 @@
+[project]
+name = "tech-challenge-fase-2"
+version = "0.1.0"
+description = "Tech Challenge Fase 2 - FIAP Post Tech IA para Devs (AG + LLM)"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "imbalanced-learn>=0.14.2",
+    "jupyterlab>=4.0",
+    "jupyterlab-lsp>=5.3.0",
+    "matplotlib>=3.8",
+    "nbstripout>=0.9.1",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "plotly>=6.6.0",
+    "pyarrow>=24.0.0",
+    "pydantic>=2.13.4",
+    "python-lsp-server>=1.14.0",
+    "scikit-learn>=1.4",
+    "seaborn>=0.13",
+    "shap>=0.44",
+    "streamlit>=1.40",
+    "openai>=1.60",
+    "python-dotenv>=1.0",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"

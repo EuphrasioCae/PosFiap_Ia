@@ -1,0 +1,5 @@
+origem,params,cv_fitness,recall,f2,precision,roc_auc,average_precision,brier
+Baseline (RandomizedSearch Fase 1),"{'min_samples_leaf': 100, 'max_leaf_nodes': 31, 'max_iter': 350, 'learning_rate': 0.05, 'l2_regularization': 1.0}",-0.485,0.9743062692702981,0.3856990286324569,0.11289242173893628,0.5773426978882401,0.1506731107164817,0.2435567745332636
+Exp1_conservador,"{'max_iter': 250, 'learning_rate': 0.03, 'max_leaf_nodes': 15, 'min_samples_leaf': 50, 'l2_regularization': 2.0}",-0.4726,0.9816289825282631,0.38539523060162206,0.11237425730925349,0.5730558439519651,0.1470022373199473,0.24471132972115608
+Exp2_padrao,"{'max_iter': 250, 'learning_rate': 0.03, 'max_leaf_nodes': 15, 'min_samples_leaf': 75, 'l2_regularization': 1.0}",-0.4721,0.9819501541623844,0.38525511464155926,0.11229789390945354,0.5732461822266064,0.14659947874799878,0.24473277568795085
+Exp3_exploratio,"{'max_iter': 250, 'learning_rate': 0.03, 'max_leaf_nodes': 15, 'min_samples_leaf': 75, 'l2_regularization': 1.0}",-0.4721,0.9819501541623844,0.38525511464155926,0.11229789390945354,0.5732461822266064,0.14659947874799878,0.24473277568795085
